@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>
+payment Form
+</title>
+</head>
+<body>
+<form action="">
+
+<h2>payment_Form</h2>
+<h3>Contact information :</h3>
+<h3>Required fields are followed by *</h3>
+<p>Name: * <input type="text"name="name" required></p>
+<fieldset>
+<legend>Gender:*</legend>
+<p>
+Male <input type="radio" name="gender"id="male" required>
+Female <input type="radio" name="gender"id="female"required>
+Other <input type="radio" name="gender"id="">
+</p>
+</fieldset>
+<p>
+Address:<textarea name="address" id="address" cols="20" rows="2"></textarea>
+<p>Email*:<input type="email" name="email" id="email"required></p>
+<p>Pincode*: <input type="number" name="pincode" id="pincode"required></p>
+<p>Document attached:<input type="file" name="file" ></p>
+<p>time:<input type="time" name="time"></p>
+<hr>
+<h2> Payment Information :</h2>
+<p>Card Type:*
+<select name ="card_type" id="">
+<option value="">--select a Card type--</option>
+<option value="visa"required>Visa</option>
+<option value="rupay"required>Rupay</option>
+<option value="master"required>Mastercard</option>
+</select>
+<p>Card number:* <input type="number" name="card_number" id="card_number"></p>
+<p>Expiry date:* <input type="date" name="expiry_date" id="expiry_date"></p>
+<p>cvv:* <input type="password" name="cvv" id="cvv"></p>
+<input type="submit" value="Pay Now">
+</p>
+</form>
+</body>
